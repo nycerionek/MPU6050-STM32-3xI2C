@@ -43,8 +43,8 @@ Import these two files into your STM32 project.
 Add include:
 ```c
 #include "mpu6050.h"
-Add inside main() before the while loop:
 
+Add inside main() before the while loop:
 extern I2C_HandleTypeDef hi2c1;  // replace with your I2C
 MPU6050_t MPU6050;
 
@@ -53,7 +53,7 @@ if (MPU6050_Init(&hi2c1, 0xD0) != 0) {
     Error_Handler();
 }
 
-Read Data in Loop
+Read Data in Loop:
 
 while (1)
 {
@@ -61,7 +61,7 @@ while (1)
     HAL_Delay(10); // 100 Hz refresh
 }
 
-Print Data via UART
+Print Data via UART:
 
 printf("Ax=%.2f Ay=%.2f Az=%.2f | AngleX=%.2f AngleY=%.2f\r\n",
        MPU6050.Ax, MPU6050.Ay, MPU6050.Az,

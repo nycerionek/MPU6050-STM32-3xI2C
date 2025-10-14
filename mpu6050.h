@@ -4,9 +4,9 @@
 #include <stdint.h>
 #include "i2c.h"
 
-#define MPU6050_ADDR_1 0xD0  // Adres pierwszego MPU6050
-#define MPU6050_ADDR_2 0xD0  // Adres drugiego MPU6050
-#define MPU6050_ADDR_3 0xD0  // Adres trzeciego MPU6050
+#define MPU6050_ADDR_1 0xD0  // Address of first MPU6050
+#define MPU6050_ADDR_2 0xD0  // Address of second MPU6050
+#define MPU6050_ADDR_3 0xD0  // Address of third MPU6050
 
 typedef struct
 {

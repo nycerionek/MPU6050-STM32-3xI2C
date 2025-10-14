@@ -41,6 +41,7 @@ Lightweight C driver for the MPU6050 (GY-521) 6-axis IMU with built-in Kalman fi
 
 Import these two files into your STM32 project. 
 Add include:
+```c
 #include "mpu6050.h"
 Add inside main() before the while loop:
 
@@ -65,4 +66,5 @@ Print Data via UART
 printf("Ax=%.2f Ay=%.2f Az=%.2f | AngleX=%.2f AngleY=%.2f\r\n",
        MPU6050.Ax, MPU6050.Ay, MPU6050.Az,
        MPU6050.KalmanAngleX, MPU6050.KalmanAngleY);
+```
 
